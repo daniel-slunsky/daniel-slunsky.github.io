@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cristiano Ronaldo - Domů</title>
-  <link rel="stylesheet" href="style.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" >
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
     <nav>
       <ul class="menu">
-        <li><a href="index.html" ><i class="fa-solid fa-house"></i> Domů</a></li>
-        <li><a href="career.html"><i class="fa-solid fa-web-awesome"></i> Kariéra</a></li>
-        <li><a href="achievements.html"><i class="fa-solid fa-trophy"></i> Úspěchy</a></li>
-        <li><a href="gallery.html"><i class="fa-solid fa-image"></i> Galerie</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-house"></i> <span>Domů</span></a></li>
+        <li><a href="career.html"><i class="fa-solid fa-futbol"></i> <span>Kariéra</span></a></li>
+        <li><a href="achievements.html"><i class="fa-solid fa-trophy"></i> <span>Úspěchy</span></a></li>
+        <li><a href="gallery.html"><i class="fa-solid fa-image"></i> <span>Galerie</span></a></li>
       </ul>
     </nav>
   </header>
@@ -53,19 +56,26 @@
   </main>
 
   <footer>
-   <p>
+    <p>
       <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
-            alt="Ověřit CSS!" >
-    </a>
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
-        <img style="border:0;width:88px;height:31px"
-            src="https://jigsaw.w3.org/css-validator/images/vcss"
-            alt="Ověřit CSS!" >
-    </a>
-     </p>
+             src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+             alt="Ověřit CSS!">
+      </a>
+    </p>
   </footer>
 
+  
+  <script>
+    function applyIconsOnly() {
+      if (window.innerWidth <= 500) {
+        document.documentElement.classList.add('icons-only');
+      } else {
+        document.documentElement.classList.remove('icons-only');
+      }
+    }
+    window.addEventListener('load', applyIconsOnly);
+    window.addEventListener('resize', applyIconsOnly);
+  </script>
 </body>
 </html>
